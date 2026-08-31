@@ -24,3 +24,262 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.shimmer-text {
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #75665a 0%,
+    #75665a 40%,
+    #14b7dc 48%,
+    #fffaf0 50%,
+    #1485dc 52%,
+    #75665a 60%,
+    #75665a 100%
+  );
+
+  background-size: 250% 100%;
+  background-position: 200% center;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+
+  65% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text {
+    animation: none;
+    color: #75665a;
+    background: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@keyframes skills-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-track {
+  width: max-content;
+  animation: skills-scroll 25s linear infinite;
+}
+
+.skills-tape:hover .skills-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-track {
+    animation: none;
+  }
+}
+
+
+
+/* Barras vintage */
+
+.intro-bars {
+  opacity: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 128, 128, 0.18) 0px,
+      rgba(0, 128, 128, 0.18) 35px,
+      transparent 35px,
+      transparent 70px
+    );
+
+  animation: intro-bars-enter 0.8s ease-out forwards;
+}
+
+@keyframes intro-bars-enter {
+  from {
+    opacity: 0;
+    transform: scaleX(1.15);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+
+/* Llaves */
+
+.intro-braces {
+  opacity: 0;
+  animation:
+    braces-enter 0.6s ease-out 0.35s forwards,
+    braces-pulse 1.2s ease-in-out 0.95s;
+}
+
+@keyframes braces-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes braces-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+
+/* BIENVENIDO */
+
+.intro-welcome {
+  opacity: 0;
+  transform: translateY(15px);
+
+  animation: welcome-enter 0.5s ease-out 0.7s forwards;
+}
+
+@keyframes welcome-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Efecto escritura */
+
+.typewriter {
+  display: inline-block;
+
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  vertical-align: bottom;
+
+  animation: typing 0.5s steps(10, end) 0.7s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 13ch;
+  }
+}
+
+
+/* Cursor terminal */
+
+.terminal-cursor {
+  opacity: 0;
+
+  animation:
+    cursor-show 0s 0.5s forwards,
+    cursor-blink 0.7s step-end 0.5s infinite;
+}
+
+@keyframes cursor-show {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Línea inferior */
+
+.intro-line {
+  width: 0;
+  opacity: 0;
+
+  animation: line-enter 0.8s ease-out 2.3s forwards;
+}
+
+@keyframes line-enter {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 120px;
+    opacity: 1;
+  }
+}
+
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-bars,
+  .intro-braces,
+  .intro-welcome,
+  .typewriter,
+  .terminal-cursor,
+  .intro-line {
+    animation: none;
+  }
+
+  .intro-bars,
+  .intro-braces,
+  .intro-welcome,
+  .terminal-cursor {
+    opacity: 1;
+  }
+
+  .typewriter {
+    width: auto;
+  }
+
+  .intro-line {
+    width: 120px;
+    opacity: 1;
+  }
+}
