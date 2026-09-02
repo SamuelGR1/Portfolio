@@ -19,7 +19,7 @@ export default function About() {
         
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-[#75665A]">
-            Ingeniero en Sistemas en formación, con interés en crear
+            Ingeniero en Sistemas en formación (Pensum Cerrado), con interés en crear
             soluciones útiles mediante la tecnología. Me caracteriza la
             curiosidad, el aprendizaje continuo y la búsqueda de soluciones a
             problemas reales. Disfruto investigar, experimentar con nuevas

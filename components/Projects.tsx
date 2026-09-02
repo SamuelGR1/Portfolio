@@ -56,9 +56,11 @@ export default function Projects() {
   return (
     <section
       id="proyectos"
-      className="scroll-mt-15 bg-[#FFFAF0] px-6 py-18"
+      className="scroll-mt-[20px] bg-[#FFFAF0] px-3.5 py-10
+      bg-[radial-gradient(circle_at_80%_45%,rgba(0,128,128,0.12),transparent_50%)]"
+      
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-5xl">
 
         {/* Encabezado */}
         <div className="mb-14">
