@@ -48,7 +48,7 @@ import ProjectImageSlider from "./ProjectImageSlider";
     ],
 
     github: "https://github.com/Robyn-Orellana/PDW.git",
-    demo: "#",
+    
   },
 ];
 
@@ -147,6 +147,7 @@ export default function Projects() {
           <FaGithub size={19} />
         </a>
 
+          {project.demo && (
         <a
           href={project.demo}
           target="_blank"
@@ -163,6 +164,7 @@ export default function Projects() {
           Ver proyecto
           <ExternalLink size={15} />
         </a>
+        )}
       </div>
     </div>
   </div>

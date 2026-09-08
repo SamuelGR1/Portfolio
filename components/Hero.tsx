@@ -47,11 +47,21 @@ export default function Hero() {
 
       
 
-<span className="absolute right-12 bottom-20 font-mono text-5xl text-[#B22222]/10">
-  {"</>"}
-</span>
+
 
         <div>
+          <p
+            className="
+              font-mono
+              text-sm
+              uppercase
+              tracking-[0.3em]
+              text-[#008080]
+            "
+          >
+            Hola, soy
+          </p>
+
           <h1 className="text-5xl font-bold tracking-tight text-[#B22222] sm:text-6xl">
             Samuel Gerónimo
           </h1>
@@ -70,7 +80,8 @@ export default function Hero() {
 
       <div className="mt-8 flex flex-wrap justify-center gap-4">
   <a
-    href="#curriculum"
+    href="\CV _SAMUEL_G_2026_IngSistemas.pdf"
+    download = "CV_SAMUEL_G_2026_IngSistemas.pdf"
     className="rounded-lg border border-[#D8C9B8] px-3 py-2 font-medium text-[#3B3028] transition hover:border-[#B22222] hover:bg-[#F3EBDD]"
   >
     Descargar CV

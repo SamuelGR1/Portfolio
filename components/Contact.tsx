@@ -73,6 +73,7 @@ export default function Contact() {
   
   <h2
     className="
+    
       mt-3
       text-6xl
       font-bold
@@ -111,7 +112,7 @@ export default function Contact() {
 </div>
 
 
-    {/* FORMULARIO - DERECHA */}
+    
     <div
       className="
          w-full
