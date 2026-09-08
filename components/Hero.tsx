@@ -165,7 +165,7 @@ export default function Hero() {
         "
       >
         <a
-          href="/CV_SAMUEL_GERONIMO_2026_IngSistemas.pdf"
+          href="/CV_SAMUEL_GERONIMO_2026_SoftwareDev.pdf"
           download="CV_SAMUEL_GERONIMO_2026_SoftwareDev.pdf"
           className="
             rounded-lg
