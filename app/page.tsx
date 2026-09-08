@@ -8,7 +8,7 @@ import IntroLoader from "@/components/IntroLoader";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-[1490px] min-h-screen w-full bg-[#FFFAF0] text-[#DC143C]">
+    <main className="mx-auto  min-h-screen w-full bg-[#FFFAF0] text-[#DC143C]">
       
       
       <Navbar />

@@ -1,7 +1,8 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { CheckCircle2, CircleAlert, Send } from "lucide-react";
+import { CheckCircle2, CircleAlert, Send,   Copy,
+  Check, } from "lucide-react";
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
@@ -98,8 +99,9 @@ export default function Contact() {
       text-[#75665A]
     "
   >
-    Puedes enviarme un mensaje desde aquí y me llegará directamente
-    al correo.
+    Puedes enviarme un mensaje al correo desde aquí o escribirme directamente a <a href="mailto:samuelgeronimo.rosales@gmail.com" className="text-[#B22222] hover:underline">
+      samuelgeronimo.rosales@gmail.com 
+    </a>
   </p>
 
   <div className="mt-10 flex items-center gap-3">
@@ -255,8 +257,47 @@ export default function Contact() {
           {status === "sending"
             ? "Enviando..."
             : "Enviar mensaje"}
-        </button>
 
+
+            
+        </button>
+{status === "success" && (
+  <div
+    className="
+      flex items-center gap-3
+      rounded-lg
+      border border-[#008080]/30
+      bg-[#008080]/10
+      px-4 py-3
+      text-[#008080]
+    "
+  >
+    <CheckCircle2 size={20} />
+
+    <p className="font-mono text-sm">
+      {statusMessage}
+    </p>
+  </div>
+)}
+
+{status === "error" && (
+  <div
+    className="
+      flex items-center gap-3
+      rounded-lg
+      border border-[#B22222]/30
+      bg-[#B22222]/10
+      px-4 py-3
+      text-[#B22222]
+    "
+  >
+    <CircleAlert size={20} />
+
+    <p className="font-mono text-sm">
+      {statusMessage}
+    </p>
+  </div>
+)}
       </form>
     </div>
 
