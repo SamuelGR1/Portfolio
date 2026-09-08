@@ -3,7 +3,18 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import ProjectImageSlider from "./ProjectImageSlider";
 
- const projects = [
+interface Project {
+  number: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  images: string[];
+  github: string;
+  demo?: string;
+}
+
+
+ const projects : Project[] = [
   {
     number: "01",
     title: "ToolsFinder ",
