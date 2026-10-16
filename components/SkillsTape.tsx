@@ -38,17 +38,7 @@ const skills = [
     name: ".NET",
     icon: <SiDotnet />,
   },
-
-
-  {
-    name: "JavaScript",
-    icon: <SiJavascript />,
-  },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript />,
-  },
-
+  
   {
     name: "React",
     icon: <FaReact />,

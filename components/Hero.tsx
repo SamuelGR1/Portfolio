@@ -165,8 +165,8 @@ export default function Hero() {
         "
       >
         <a
-          href="/CV_SAMUEL_GERONIMO_2026_SoftwareDev.pdf"
-          download="CV_SAMUEL_GERONIMO_2026_SoftwareDev.pdf"
+          href="/CV_SAMUEL_G_2026_SoftwareDev.pdf"
+          download="CV_SAMUEL_G_2026_SoftwareDev.pdf"
           className="
             rounded-lg
             border border-[#D8C9B8]

@@ -54,9 +54,9 @@ export default function About() {
               sm:leading-8
             "
           >
-            Ingeniero en Sistemas en formación (Pensum Cerrado), con interés en
-            crear soluciones útiles mediante la tecnología. Me caracteriza la
-            curiosidad, el aprendizaje continuo y la búsqueda de soluciones a
+             Desarrollador de Software con formación en Ingeniería en Sistemas (Pensum Cerrado), 
+             intersado  en crear soluciones útiles mediante la tecnología. Me caracteriza la
+             curiosidad, el aprendizaje continuo y la búsqueda de soluciones a
             problemas reales. Disfruto investigar, experimentar con nuevas
             tecnologías y convertir ideas en proyectos funcionales.
           </p>
